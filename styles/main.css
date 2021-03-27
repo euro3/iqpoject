@@ -1,0 +1,128 @@
+.main {
+  width: 50vw;
+  height: 95vh;
+  border: 2px solid orange;
+  border-radius: 30px;
+  margin: 20px auto;
+  background-color: #A7E6CE;
+}
+
+.main .divsField {
+  position: relative;
+  height: 80%;
+  width: 80%;
+  margin: 10px auto;
+  background-color: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: ()[5];
+      grid-template-rows: repeat(5);
+  -ms-grid-columns: ()[5];
+      grid-template-columns: repeat(5);
+      grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . ." ". . . . .";
+}
+
+.main .divsField .white {
+  border: 1px solid lightgray;
+  background-color: white;
+}
+
+.main .divsField .blue {
+  border: 1px solid lightgray;
+  background-color: blue;
+}
+
+.main .divsField .orange {
+  border: 1px solid lightgray;
+  background-color: orange;
+}
+
+.main .remote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 15%;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #6B73FA;
+}
+
+.main .remote .statusBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  height: 99%;
+  border-radius: 10px;
+}
+
+.main .remote .statusBar .status {
+  width: 60%;
+  height: 40%;
+  background-color: white;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 44px;
+  color: #5f3e00;
+}
+
+.main .remote .buttons {
+  display: -ms-grid;
+  display: grid;
+  width: 40%;
+  height: 99%;
+  border-radius: 10px;
+  -ms-grid-columns: ()[3];
+      grid-template-columns: repeat(3);
+  -ms-grid-rows: ()[3];
+      grid-template-rows: repeat(3);
+      grid-template-areas: ".up." "lt.rt" ".dn.";
+}
+
+.main .remote .buttons .up {
+  grid-area: up;
+}
+
+.main .remote .buttons .down {
+  grid-area: dn;
+}
+
+.main .remote .buttons .left {
+  grid-area: lt;
+}
+
+.main .remote .buttons .right {
+  grid-area: rt;
+}
+
+.main .remote .buttons button {
+  background-color: yellow;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.end {
+  position: absolute;
+  left: 230px;
+  top: 250px;
+  z-index: 1;
+  background-color: orangered;
+  border: 5px solid black;
+  color: white;
+  text-align: center;
+  line-height: 148px;
+  font-size: 7rem;
+  height: 20vh;
+  width: 60vw;
+  opacity: 0;
+}
+/*# sourceMappingURL=main.css.map */
